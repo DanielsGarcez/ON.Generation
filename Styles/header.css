@@ -20,6 +20,8 @@
 
   /* Fonte */
   font-family: var(--fonteInter);
+
+  /* Deslocamento Z */
   z-index: 1000;
 }
 

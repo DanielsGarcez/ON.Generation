@@ -26,8 +26,5 @@
   background: var(--corAzul);
   height: 60px;
   margin-top: 40px;
-
-  position: sticky;
-  bottom:0%;
   width: 100%;
 }

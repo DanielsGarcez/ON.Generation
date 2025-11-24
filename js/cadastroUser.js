@@ -68,13 +68,13 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Cadastro válido! Enviando dados...");
 
     try {
-      // 1️⃣ Cria o usuário no AUTH
+      // Cria o usuário no AUTH
       const userCredential = await createUserWithEmailAndPassword(auth, emailUser, senhaUser);
       const user = userCredential.user;
 
       console.log("Usuário criado no Auth:", user.uid);
 
-      // 2️⃣ Cria documento no Firestore com o UID
+      // Cria documento no Firestore com o UID
       await setDoc(doc(db, "usuarios", user.uid), {
         nome: nomeCompleto,
         email: emailUser,
