@@ -104,7 +104,7 @@ button {
   color: var(--corAzul);
   border: 1px solid var(--corAzul);
   border-radius: 6px;
-  padding: 8px 16px;
+  padding: 3% 30%;
   font-weight: 600;
   cursor: pointer;
 }

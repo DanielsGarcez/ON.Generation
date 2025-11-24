@@ -144,7 +144,7 @@ aside.grupo-input{
     /* Dimensionamento */
     margin: auto;
     display: block;
-    padding: 10px 100px;
+    padding: 1% 10%;
     font-size: 1.5em;
     font-weight: bold;
 
@@ -300,4 +300,100 @@ section.dados-endereco{
     /* Alinhamento */
     display: flex;
     object-fit: cover;
+}
+
+/* Tablets e telas médias */
+@media (max-width: 992px) {
+
+    .cadastro {
+        grid-template-columns: 1fr;  /* DUAS COLUNAS → UMA COLUNA */
+        gap: 40px;
+        padding: 30px;
+    }
+
+    .bordas {
+        margin: 20px;
+    }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .cadastro {
+        padding: 25px 20px;
+        gap: 30px;
+    }
+
+    .grupo-input {
+        min-width: 100%;
+    }
+
+    aside.grupo-input {
+        display: flex;
+        flex-direction: column; /* COLUNA EM VEZ DE GRID */
+        gap: 10px;
+    }
+
+    .min-grupo-input input {
+        width: 100%; /* Corrige inputs cortando na direita */
+    }
+
+    .titulo {
+        font-size: 1.7rem;
+        padding-top: 20px;
+    }
+
+    .btn-cadastro {
+        width: 80%;
+        padding: 12px 0;
+        font-size: 1.2rem;
+    }
+
+    .btn-recuperar {
+        text-align: center;
+        display: block;
+        margin: 10px auto;
+        font-size: 0.9rem;
+    }
+}
+
+/* Celulares pequenos (≤ 480px) */
+@media (max-width: 480px) {
+
+    .cadastro {
+        padding: 15px;
+        gap: 20px;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 0.9rem;
+        min-height: 35px;
+    }
+
+    #descricao {
+        height: 90px;
+    }
+
+    .btn-cadastro {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    #form-ONG{
+    margin-top: 70px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
 }
