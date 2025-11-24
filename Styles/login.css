@@ -213,8 +213,8 @@ section.dados-endereco{
 }
 
 #form-login {
-    padding: 0px 100px;
-    margin-left: 100px;
+    padding: 0px 5%;
+    margin-left: 5%;
 
     width: 280px;
     row-gap: 10px;
@@ -396,4 +396,39 @@ section.dados-endereco{
     padding-top: 15%;
     padding-bottom: 15%;
 }
+}
+
+/* Remover imagem no mobile (≤ 768px) */
+@media (max-width: 768px) {
+
+    .login {
+        flex-direction: column;      /* Empilha conteúdo */
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagem-maos {
+        display: none;               /* Remove a imagem */
+    }
+
+    #form-login {
+        margin-left: 0;
+        width: 90%;                  /* Aumenta largura do formulário */
+        padding: 0;
+    }
+
+    .dados-login h1 {
+        padding: 40px 0 20px 0;      /* Ajusta espaçamento */
+    }
+
+    .btn-login {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .btn-cadastrar-se {
+        display: block;
+        width: 100%;
+        justify-content: center;
+    }
 }

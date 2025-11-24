@@ -99,7 +99,7 @@ body {
   object-position: 100% 100%; 
 }
 
-button {
+.versite {
   background: #fff;
   color: var(--corAzul);
   border: 1px solid var(--corAzul);
@@ -109,7 +109,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.versite:hover {
   transition: 500ms;
   color: var(--corBranco);
   background: var(--corAzul);

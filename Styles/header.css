@@ -61,11 +61,136 @@
 .navbar a:hover {
   text-decoration: underline 1.5px;
 }
+/* ---  MODO DESKTOP  --- */
+@media (min-width: 851px) {
 
-.user-icon .circle {
-  display: flex;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: #d9d9d9;
+  /* Topbar normal */
+  .topbar {
+    padding: 5px 100px;
+  }
+
+  /* Navbar horizontal */
+  .navbar {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    height: auto;
+    width: auto;
+    box-shadow: none;
+    background: none;
+  }
+
+  .navbar a {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  /* Ícone de usuário correto no desktop */
+  .user-icon .circle {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #d9d9d9;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 0;
+  }
+
+  .user-icon img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+  }
+
+  /* O item user-mobile NÃO aparece no desktop */
+  .user-mobile {
+    display: none !important;
+  }
+
+  /* Hamburguer escondido no desktop */
+  .hamburger {
+    display: none !important;
+  }
+}
+
+
+/* ---  MODO MOBILE --- */
+@media (max-width: 850px) {
+
+  .topbar {
+    padding: 8px 18px;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    height: 100vh;
+    width: 260px;
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    padding-top: 120px;
+    transition: .3s ease;
+    box-shadow: -1px 0 8px rgba(0,0,0,0.3);
+  }
+
+  .navbar.open {
+    right: 0;
+  }
+
+  /* Texto PERFIL */
+  .user-mobile img {
+    display: none;
+  }
+
+  .user-mobile::before {
+    content: "PERFIL";
+    font-size: 1.2rem;
+    color: var(--corAzul);
+  }
+
+  /* Ícone da direita (desktop) some */
+  .user-icon {
+    display: none;
+  }
+
+  /* Navegação mobile */
+  .navbar a {
+    font-size: 1.15rem;
+    padding-left: 28px;
+  }
+
+  /* Hamburguer aparece */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    width: 26px;
+    height: 3px;
+    background: var(--corAzul);
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+  .hamburger.active span:nth-child(2) { opacity: 0; }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
 }

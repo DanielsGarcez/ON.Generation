@@ -2,17 +2,31 @@
 <header class="topbar">
     <picture class="logo-area">
         <a href="../index.html">
-            <img src="../img/Logo-Black.png" alt="Logo Divulga ONGs" class="logo">
+            <img src="../img/Logo-Black.png" alt="Logo" class="logo">
         </a>
     </picture>
-    <nav class="navbar">
+
+    <!-- Navbar centralizada no desktop -->
+    <nav class="navbar" id="navbar">
         <a href="../Pages/Categorias.html">CATEGORIAS</a>
         <a href="CadastroOng.html">CADASTRAR ONG</a>
         <a href="#">SOBRE NÓS</a>
+
+        <!-- PERFIL (mobile) -->
+        <a href="LoginPessoa.html" class="user-mobile">
+            <img src="../img/Icon-User.png">
+        </a>
     </nav>
+
+    <!-- Ícone usuário DESKTOP -->
     <aside class="user-icon">
-        <a href="LoginPessoa.html " class="circle">
-            <img src="../img/Icon-User.png" class="user-icon">
+        <a href="LoginPessoa.html" class="circle">
+            <img src="../img/Icon-User.png">
         </a>
     </aside>
-</header> 
+
+    <!-- Hambúrguer (mobile) -->
+    <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </button>
+</header>
