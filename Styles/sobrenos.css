@@ -11,6 +11,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 /* SECTION BASE */
 .section {
   display: flex;
@@ -23,13 +24,40 @@ body {
 }
 
 .section:nth-child(even) {
-  background: var(--corCinzaClaro);
+  background: white;
 }  
 .sub-titulo {
   display: flex;
   padding: 10px;
   margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
+
+.tres{
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 3%;
+
+  gap: 5%;
+}
+
+.item{
+  width: 33%;
+}
+
+.item h2{
+  margin-bottom: 10%;
+}
+
+h2{
+  font-size: 2em;
+}
+
+p{
+  font-size: 1.5em;
+}
+
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .navbar {
