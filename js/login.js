@@ -59,7 +59,7 @@ window.addEventListener("DOMContentLoaded", () => {
       mensagem.textContent = "Login realizado com sucesso!";
       mensagem.style.color = "green";
 
-      window.location.href = "Dashboard.html";
+      window.location.href = "dashboard.html";
     }
     
     // Falhas de Login
