@@ -33,6 +33,8 @@ body {
   justify-content: space-between;
   background-color: var(--corAzul);
   padding: 10px 150px;
+
+  z-index: 999999;
 }
 
 .header-left, a {
@@ -127,11 +129,16 @@ body {
   color: #555;
   font-size: 14px;
   text-align: center;
-  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
 } 
+
+.banner img {
+  width: 100%;
+  height: auto; /* mantém proporção correta */
+  display: block;
+}
 
 .container-img{
   height: max-content;

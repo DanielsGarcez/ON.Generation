@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  color: #0b214a;
+}
+.imagem {
+  width: 100%;
+  height: 100%;
+}
+/* SECTION BASE */
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  flex-wrap: wrap;
+  align-items: stretch;
+  text-align: center;
+}
+
+.section:nth-child(even) {
+  background: var(--corCinzaClaro);
+}  
+.sub-titulo {
+  display: flex;
+  padding: 10px;
+  margin: 0 auto;
+}
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .navbar {
+    gap: 20px;
+  }
+}
