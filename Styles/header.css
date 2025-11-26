@@ -1,29 +1,5 @@
 /* HEADER */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-:root {
-    /* Cores Prédefinidas */
-    --corAzul: #0F5A93;
-    --corBranco: #FAFAFA;
-    --corCinzaClaro: #f8f8f8;
-    --corCinzaEscuro: #616161;
-    --corPreto: #000;
-
-    /* Tipografia */
-    --fonteInter: 'Inter', sans-serif;
-}
-
-*{
-  /* Dimensionamento Padrão Global */
-  margin: 0;
-  padding: 0;
-
-  /* Fonte */
-  font-family: var(--fonteInter);
-
-  /* Deslocamento Z */
-  z-index: 1000;
-}
+@import url('variaveis.css');
 
 .topbar {
   display: flex;
@@ -50,7 +26,6 @@
   display: flex;
   gap: 40px;
 }
-
 
 .navbar a {
   color: var(--corAzul);

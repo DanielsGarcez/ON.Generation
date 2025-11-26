@@ -1,11 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import url('variaveis.css');
 
 body {
   background: #fff;
-  color: #0b214a;
 }
 .imagem {
   width: 100%;
@@ -52,10 +48,12 @@ body {
 
 h2{
   font-size: 2em;
+  color: var(--corAzul);
 }
 
 p{
   font-size: 1.5em;
+  color: var(--corPreto);
 }
 
 /* RESPONSIVO */
