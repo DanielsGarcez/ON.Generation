@@ -56,6 +56,13 @@ body {
 
 .profile{
   margin-left: 250px;
+  border: 3px solid var(--corAzul);
+  border-radius: 100%;
+}
+
+.profile:hover{
+  transition: 500ms;
+  border: 3px solid var(--corAzulClaro);
 }
 
 .profile .avatar {
@@ -118,13 +125,13 @@ body {
 }
 
 .container-img{
-  height: max-content;
+  height: 100;
   width: 50%;
 }
 
 .imagem{
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   display: block;
 
@@ -171,14 +178,15 @@ body {
 }
 
 .text-box ul {
-  list-style: none;
-  margin-bottom: 20px;
+  list-style: circle;
+  margin-top: 10%;
+  margin-bottom: 10%;
   text-align: left;
 }
 
 .text-box li {
-  margin-bottom: 6px;
-  font-weight: 500;
+  margin-bottom: 5%;
+  font-size: 1.3em;
 }
 
 .text {
@@ -186,17 +194,21 @@ body {
   flex-direction: column;    
   align-items: center;       
 
-  font-size: 1.3em;
+  font-size: 1.2em;
   padding: 2rem;
 }
 
 .text h2 {
-  margin-bottom: 50px;
+  margin-top: 5%;
+  margin-bottom: 8%;
+  font-size: 1.8em;
 }
 
 .text p{
   text-align: justify;
-  padding: 0px 40px;
+  padding: 0px 2%;
+  
+  font-size: 1.2em;
 }
 
 .btn {
@@ -211,6 +223,8 @@ body {
 
   cursor: pointer;
   font-size: 1.1em;
+
+  margin-bottom: 1.5em;
 }
 
 #btn-vermais{
@@ -220,7 +234,7 @@ body {
 
 .blue-section .btn, .alt-section .btn{
   font-size: 1.5em;
-  padding: 10px 100px;  
+  padding: 2% 10%;  
 }
 
 .blue-section .btn {
@@ -248,7 +262,7 @@ body {
 }
 
 /* RESPONSIVO */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .section {
     flex-direction: column;
     text-align: center;
@@ -267,6 +281,7 @@ body {
     width: 100%;
   }
 
+  
   .section.text,
   .section .imagem {
     flex: 1 1 100%; /* ocupa toda a largura */
@@ -277,6 +292,10 @@ body {
     height: auto; /* evita corte no mobile */
   }
 
+  .container-img{
+    height: 100%;
+  }
+
   .section .text {
     text-align: center;
     padding: 1.5rem;
@@ -285,15 +304,16 @@ body {
   .texto h2 {
     font-size: 1.6rem;
   }
-
+  
   .imagem img {
+    width: 200%;
     height: max-content;
     max-height: 1rem;
   }
 }
 
 
-@media (max-width: 850px) {
+@media (max-width: 700px) {
   .navbar {
     gap: 20px;
   }
@@ -307,7 +327,11 @@ body {
   }
 
   .hero{
-    height: 140px;
+    height: 9em;
+  }
+  
+  .section{
+    padding: 0;
   }
 
   .img-placeholder {

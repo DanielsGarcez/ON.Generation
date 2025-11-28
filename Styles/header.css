@@ -67,8 +67,10 @@
   .user-icon .circle {
       width: 100%;
       height: 100%;
-      border-radius: 50%;
-      background: #d9d9d9;
+
+      border: 2px solid var(--corBranco);
+      border-radius: 100%;
+      background: var(--corBranco);
 
       display: flex;
       justify-content: center;
@@ -77,9 +79,15 @@
       padding: 0;
   }
 
+  .user-icon .circle:hover {
+    transition: 500ms;
+    border: 2px solid var(--corAzul);
+  }
+
   .user-icon img {
       width: 40px;
       height: 40px;
+      border-radius: 100%;
       object-fit: cover;
   }
 
@@ -92,6 +100,17 @@
   .hamburger {
     display: none !important;
   }
+}
+
+.profile{
+  margin-left: 250px;
+  border: 3px solid var(--corAzul);
+  border-radius: 100%;
+}
+
+.profile:hover{
+  transition: 500ms;
+  border: 3px solid var(--corAzulClaro);
 }
 
 
