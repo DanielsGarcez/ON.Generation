@@ -40,7 +40,7 @@ main article{
 
 .cadastro{
     /* Proporção */
-    padding: 50px;
+    padding: 40px;
 
     /* Grid de alinhamento */
     display: grid;
@@ -178,7 +178,7 @@ section.dados-endereco{
 /* ---------- Página de Cadastro ONG ---------- */
 
 #form-ONG{
-    margin-top: 70px;
+    margin-top: 3%;
     padding-top: 30px;
     padding-bottom: 90px;
 }

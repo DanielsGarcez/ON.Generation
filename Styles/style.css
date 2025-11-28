@@ -96,7 +96,6 @@ body {
 
 /* HERO */
 .hero {
-  background: #d9d9d9;
   height: 300px;
   display: flex;
   align-items: center;
@@ -104,8 +103,6 @@ body {
 }
 
 .placeholder {
-  background: #d9d9d9;
-  color: #555;
   font-size: 14px;
   text-align: center;
   display: flex;
@@ -293,4 +290,33 @@ body {
     height: max-content;
     max-height: 1rem;
   }
+}
+
+
+@media (max-width: 850px) {
+  .navbar {
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero{
+    height: 140px;
+  }
+
+  .img-placeholder {
+    height: 160px;
+    background: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+  }
+
 }
