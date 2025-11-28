@@ -1,27 +1,21 @@
 @import url('variaveis.css');
 
-body {
-  background-color: #fff;
-}
-
-/* HEADER */
+/* --------------------- HEADER --------------------- */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--corAzul);
+  background: var(--corAzul);
   padding: 10px 150px;
-
   position: sticky;
   z-index: 999999;
 }
 
-.header-left, a {
+.header-left, .header-left a {
   display: flex;
   align-items: center;
   gap: 8px;
   color: #fff;
-
   text-decoration: none;
 }
 
@@ -54,33 +48,31 @@ body {
   cursor: pointer;
 }
 
-.profile{
+.profile {
   margin-left: 250px;
   border: 3px solid var(--corAzul);
-  border-radius: 100%;
+  border-radius: 50%;
+  transition: border .5s;
 }
-
-.profile:hover{
-  transition: 500ms;
-  border: 3px solid var(--corAzulClaro);
+.profile:hover {
+  border-color: var(--corAzulClaro);
 }
 
 .profile .avatar {
-  display: flex;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: var(--corCinzaClaro);
+  display: flex;
 }
 
-/* NAVBAR */
+/* --------------------- NAVBAR --------------------- */
 .navbar {
   display: flex;
   justify-content: center;
   gap: 40px;
   background: #f6f6f6;
   padding: 12px;
-
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.288);
   position: sticky;
   top: 0;
@@ -96,176 +88,143 @@ body {
   text-decoration: underline 1.5px;
 }
 
-.lupa-buscar{
-  width: 70;
-  height: 70;
+/* --------------------- MAIN --------------------- */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4em;
+  justify-content: center;
+  align-items: center;
 }
 
-/* HERO */
+/* --------------------- HERO --------------------- */
 .hero {
   height: 300px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
 }
-
-.placeholder {
-  font-size: 14px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} 
 
 .banner img {
   padding-top: 5%;
   width: 100%;
-  height: auto; /* mantém proporção correta */
   display: block;
 }
 
-.container-img{
-  height: 100;
+.container-img {
   width: 50%;
 }
 
-.imagem{
+.imagem {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-
 }
 
-/* SECTION BASE */
+/* --------------------- SECTIONS --------------------- */
 .section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 10%;
-  
   flex-wrap: wrap;
   align-items: stretch;
   text-align: center;
+  margin: 0 15%;
+
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.section:nth-child(even) {
-  background: var(--corCinzaClaro);
+.blue-section, .blue-section .text-box, .alt-section img{
+  border-radius: 1em 0px 0px 1em;
 }
 
-.blue-section {
-  padding-top: 6%;
-
-  background: var(--corAzul);
-  color: var(--corBranco);
+.alt-section, .alt-section .text-box, .blue-section img{
+  border-radius: 0px 1em 1em 0px;
 }
-
-.alt-section {
-  background: var(--corCinzaClaro);
-}
-
 .text-box {
   flex: 1;
+  background: var(--corAzul);
   color: var(--corBranco);
-  background-color: var(--corAzul);
   padding: 15px;
-
-  /* Alinhamento */
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10%;
+  align-items: center;
 }
 
 .text-box ul {
   list-style: circle;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin: 10% 0;
   text-align: left;
 }
-
 .text-box li {
   margin-bottom: 5%;
   font-size: 1.3em;
 }
 
 .text {
-  display: flex;             
-  flex-direction: column;    
-  align-items: center;       
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 2rem;
   font-size: 1.2em;
-  padding: 2rem;
 }
 
 .text h2 {
-  margin-top: 5%;
-  margin-bottom: 8%;
+  margin: 5% 0 8%;
   font-size: 1.8em;
 }
 
-.text p{
+.text p {
   text-align: justify;
-  padding: 0px 2%;
-  
+  padding: 0 2%;
   font-size: 1.2em;
 }
 
+/* --------------------- BOTÕES --------------------- */
 .btn {
-  /* Alinhamento e Dimensionamento */
-  max-width: fit-content;
-  
-  /* Cores e Estilos */
   background: var(--corBranco);
   color: var(--corAzul);
   border: 1px solid var(--corAzul);
   border-radius: 6px;
-
-  cursor: pointer;
   font-size: 1.1em;
-
+  cursor: pointer;
+  max-width: fit-content;
   margin-bottom: 1.5em;
 }
 
-#btn-vermais{
-  font-size: 1em;
+#btn-vermais {
   padding: 10px 60px;
+  font-size: 1em;
 }
 
-.blue-section .btn, .alt-section .btn{
+.blue-section .btn,
+.alt-section .btn {
   font-size: 1.5em;
-  padding: 2% 10%;  
+  padding: 2% 10%;
+  transition: .5s;
 }
 
-.blue-section .btn {
-  border: 1px solid var(--corAzul);
-  background: var(--corBranco);
-  color: var(--corAzul);
-}
 .blue-section .btn:hover {
-  transition: 500ms;
-  border: 1px solid var(--corBranco);
   background: var(--corAzul);
   color: var(--corBranco);
+  border-color: var(--corBranco);
 }
 
 .alt-section .btn {
-  border: 1px solid var(--corBranco);
   background: var(--corAzul);
   color: var(--corBranco);
+  border: 1px solid var(--corBranco);
 }
-
 .alt-section .btn:hover {
-  transition: 500ms;
   background: var(--corBranco);
   color: var(--corAzul);
 }
 
-/* RESPONSIVO */
+/* --------------------- RESPONSIVO --------------------- */
 @media (max-width: 850px) {
   .section {
     flex-direction: column;
-    text-align: center;
   }
 
   .search-bar {
@@ -277,41 +236,10 @@ body {
     gap: 20px;
   }
 
-  .placeholder {
-    width: 100%;
-  }
-
-  
-  .section.text,
-  .section .imagem {
-    flex: 1 1 100%; /* ocupa toda a largura */
-  }
-
-
-  .section .imagem img {
-    height: auto; /* evita corte no mobile */
-  }
-
-  .container-img{
+  .container-img {
     height: 100%;
   }
-
-  .section .text {
-    text-align: center;
-    padding: 1.5rem;
-  }
-
-  .texto h2 {
-    font-size: 1.6rem;
-  }
-  
-  .imagem img {
-    width: 200%;
-    height: max-content;
-    max-height: 1rem;
-  }
 }
-
 
 @media (max-width: 700px) {
   .navbar {
@@ -326,21 +254,11 @@ body {
     font-size: 1.5rem;
   }
 
-  .hero{
+  .hero {
     height: 9em;
   }
-  
-  .section{
+
+  .section {
     padding: 0;
   }
-
-  .img-placeholder {
-    height: 160px;
-    background: #d9d9d9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #555;
-  }
-
 }
