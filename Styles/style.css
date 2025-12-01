@@ -114,6 +114,7 @@ main {
 
 .container-img {
   width: 50%;
+  background-color: transparent; /* ou remova totalmente */
 }
 
 .imagem {
@@ -130,17 +131,18 @@ main {
   align-items: stretch;
   text-align: center;
   margin: 0 15%;
+  border-radius: 1em;
 
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.blue-section, .blue-section .text-box, .alt-section img{
-  border-radius: 1em 0px 0px 1em;
+.blue-section, .blue-section .text-box, .alt-section, .alt-section img{
+    overflow: hidden;
+  
 }
 
-.alt-section, .alt-section .text-box, .blue-section img{
-  border-radius: 0px 1em 1em 0px;
-}
+
+
 .text-box {
   flex: 1;
   background: var(--corAzul);
@@ -238,6 +240,9 @@ main {
 
   .container-img {
     height: 100%;
+
+
+    overflow: hidden;
   }
 }
 
