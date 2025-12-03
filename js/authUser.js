@@ -27,7 +27,7 @@ export function inicializarAvatar() {
         window.location.href = "../Pages/Dashboard.html";
       } else {
         // Senão → Login
-        window.location.href = "../Pages/login.html";
+        window.location.href = "../Pages/LoginPessoa.html";
       }
     });
   });
