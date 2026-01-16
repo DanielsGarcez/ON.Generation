@@ -24,6 +24,12 @@
   height: 70px;
 }
 
+.header-left h1{
+  width: 0px;
+  position: sticky;
+  margin: 0px;
+}
+
 .search-bar {
   display: flex;
   align-items: center;
