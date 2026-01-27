@@ -184,6 +184,8 @@ section.dados-endereco{
 }
 
 #descricao{
+    box-sizing: border-box;
+
     height: 100px;
     text-align: justify;
     resize: none;
