@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   background: var(--corAzul);
-  padding: 10px 150px;
+  padding: 1rem 5rem;
   position: sticky;
   z-index: 999999;
 }
@@ -14,6 +14,8 @@
 .header-left, .header-left a {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+
   gap: 8px;
   color: #fff;
   text-decoration: none;
@@ -25,7 +27,6 @@
 }
 
 .header-left h1{
-  width: 0px;
   position: sticky;
   margin: 0px;
 }
