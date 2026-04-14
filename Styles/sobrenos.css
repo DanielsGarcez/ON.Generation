@@ -37,6 +37,7 @@ main{
 
 .pilares{
   display: flex;
+  
   margin-top: 10%;
   margin-bottom: 10%;
 
@@ -69,8 +70,27 @@ p{
 }
 
 /* RESPONSIVO */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  main{
+    margin-top: 2rem;
+    box-shadow: none;
+    margin: 0;
+  }
+
   .navbar {
     gap: 20px;
+  }
+
+  .pilares{
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  hr{
+    display: none;
   }
 }

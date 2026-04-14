@@ -233,6 +233,10 @@ main {
 
 /* --------------------- RESPONSIVO --------------------- */
 @media (max-width: 850px) {
+  .header-PC{
+    display: none;
+  }
+
   .section {
     flex-direction: column;
   }

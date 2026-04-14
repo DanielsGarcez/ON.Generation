@@ -110,7 +110,13 @@ main{
 }
 
 /* RESPONSIVO */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  main{
+    margin-top: 2rem;
+    box-shadow: none;
+    margin: 0;
+  }
+  
   .navbar {
     gap: 20px;
   }
@@ -121,7 +127,7 @@ main{
 
   .container h1 {
     font-size: 1.5rem;
-    padding: 10% 3%;
+    padding-top: 2rem;
   }
 
   .img-placeholder {
