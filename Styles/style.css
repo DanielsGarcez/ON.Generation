@@ -1,7 +1,7 @@
 @import url('variaveis.css');
 
 /* --------------------- HEADER --------------------- */
-.header {
+.header-PC {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,7 +75,7 @@
 }
 
 /* --------------------- NAVBAR --------------------- */
-.navbar {
+.navbar-PC {
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -86,13 +86,13 @@
   top: 0;
 }
 
-.navbar a {
+.navbar-PC a {
   text-decoration: none;
   color: var(--corAzul);
   font-weight: 600;
 }
 
-.navbar a:hover {
+.navbar-PC a:hover {
   text-decoration: underline 1.5px;
 }
 
@@ -146,7 +146,6 @@ main {
 
 .blue-section, .blue-section .text-box, .alt-section, .alt-section img{
     overflow: hidden;
-  
 }
 
 
@@ -233,7 +232,7 @@ main {
 
 /* --------------------- RESPONSIVO --------------------- */
 @media (max-width: 850px) {
-  .header-PC{
+  .header-PC, .navbar-PC{
     display: none;
   }
 
@@ -243,11 +242,6 @@ main {
 
   .search-bar {
     width: 60%;
-  }
-
-  .navbar {
-    flex-wrap: wrap;
-    gap: 20px;
   }
 
   .container-img {
