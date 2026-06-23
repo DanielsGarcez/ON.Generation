@@ -26,11 +26,9 @@
   height: 70px;
 }
 
-.header-left > a > h1{
+.header-left h1{
   position: sticky;
   margin: 0px;
-
-  font-family: var(--fonteInter);
 }
 
 .search-bar {
