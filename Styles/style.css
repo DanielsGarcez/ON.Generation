@@ -29,6 +29,8 @@
 .header-left h1{
   position: sticky;
   margin: 0px;
+
+  font-family: var(--fonteInter);
 }
 
 .search-bar {
