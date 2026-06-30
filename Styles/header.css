@@ -46,6 +46,7 @@
 
   /* Topbar normal */
   .topbar {
+    display: none;
     padding: 5px 100px;
   }
 
@@ -99,10 +100,6 @@
     display: none !important;
   }
 
-  /* Hamburguer escondido no desktop */
-  .hamburger {
-    display: none !important;
-  }
 }
 
 .profile{
