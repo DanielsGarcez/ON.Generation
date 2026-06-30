@@ -1,85 +1,109 @@
 @import url('variaveis.css');
 
-main {
-    padding: 40px 5%;
-    text-align: center;
-    font-family: var(--fonteInter);
+body {
+  background: #fff;
+  color: var(--corAzul);
 }
 
-h1{
-    color: var(--corAzul);
-    padding-bottom: 5%;
+/* CONTAINER PRINCIPAL (Mesmo estilo de categorias.css) */
+main.container {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.288);
+  border-radius: 1em;
+  margin: 2% 15%;
+  padding: 3%;
+  text-align: center;
+  font-family: var(--fonteInter);
+  background: #fff;
 }
 
-h2{
-    color: var(--corAzul);
-    font-size: 1.3em;
-    padding-bottom: 1em;
+main.container h1 {
+  color: var(--corAzul);
+  margin-bottom: 40px;
 }
 
-p{
-    font-size: 1.3em;
-    padding-bottom: 1em;
+/* GRID ONDE OS CARDS FICARÃO LADO A LADO */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  width: 100%;
 }
 
-hr{
-    margin: 10px 0px;
+/* ESTILO DO CARD (Totalmente azul, sem espaço de imagem) */
+.card-ong {
+  background-color: var(--corAzul);
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 24px 16px;
+  width: 250px;
+  min-height: 280px; /* Garante uma altura mínima para ficarem iguais */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between; /* Mantém o título no topo e o botão no fundo */
+  transition: transform 0.2s ease;
 }
 
-.botao{
-    min-width: 100%;
-    
-    padding: 2% 0px;
-    margin: 5% 0px;
-    font-size: 1.3em;
-
-    color: var(--corBranco);
-    background-color: var(--corAzul);
-    border: 1px solid var(--corAzul);
-    border-radius: 5px;
+.card-ong:hover {
+  transform: translateY(-5px);
 }
 
-.botao:hover{
-    cursor: pointer;
-    transition: 500ms;
-    color: var(--corAzul);
-    background-color: var(--corBranco);
+/* TEXTOS DENTRO DO CARD */
+.card-ong h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  padding: 0;
 }
 
-.lista{
-    padding: 2%;
+.card-ong p {
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
-.card-ong{
-    display: flex;
-    flex-direction: column;
-    padding: 1%;
+/* BOTÃO INVERTIDO (Fundo branco, texto azul) */
+.botao {
+  background: #fff;
+  color: var(--corAzul);
+  border: 1px solid var(--corAzul);
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 80%; /* Evita que o botão ocupe 100% encostando nas bordas */
+  margin-top: auto; 
 }
 
-.container{
-    text-align: justify;
-      /* Deslocamento Z */
-        z-index: 1;
+.botao:hover {
+  transition: 500ms;
+  color: var(--corBranco);
+  background: var(--corAzul);
+  border: 1px solid var(--corBranco);
 }
 
-@media (min-width: 768px) {
-    h1{
-        font-size: 2.1em;
-        padding-bottom: 0%;
-    }
+/* RESPONSIVO */
+@media (max-width: 800px) {
+  main.container {
+    margin-top: 2rem;
+    box-shadow: none;
+    margin: 0;
+    padding: 5%;
+  }
+  
+  .card-ong {
+    width: 90%; /* Ocupa quase a tela toda no celular */
+  }
 
-    h2{
-        font-size: 1.8em;
-    }
-
-    p{
-        font-size: 1.5em;
-    }
-
-    .botao{
-        min-width: 20%;
-        padding: 0.5% 5%;
-        margin: 1% auto;
-    }
-
+  main.container h1 {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+  }
 }
