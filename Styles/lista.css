@@ -31,7 +31,7 @@ main.container h1 {
 }
 
 /* =========================================
-   ESTILO DO CARD DA ONG (PADRONIZADO)
+   ESTILO DO CARD DA ONG
 ========================================= */
 .card-ong {
   background-color: var(--corAzul);
@@ -41,14 +41,13 @@ main.container h1 {
   padding: 24px 16px;
   width: 250px;
   
-  /* NOVIDADE: Altura fixa para todos os cards ficarem idênticos */
-  height: 380px; 
+  /* Faz o card esticar para acompanhar o card mais alto da mesma linha */
+  height: 100%; 
   
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: space-between;
   transition: transform 0.2s ease;
 }
 
@@ -70,15 +69,9 @@ main.container h1 {
   color: #fff;
   font-size: 0.9rem;
   line-height: 1.4;
-  margin-bottom: auto; /* Mantém o espaçamento flexível antes do botão */
+  margin-bottom: 20px;
   padding: 0;
-
-  /* TRUQUE MÁGICO: Limita o texto para não estourar o card */
-  display: -webkit-box;
-  -webkit-line-clamp: 6; /* Mostra no máximo 6 linhas. Pode alterar se quiser! */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis; /* Adiciona o "..." no final do texto cortado */
+  /* Removemos todas as regras de -webkit que cortavam o texto e geravam os "..." */
 }
 
 
