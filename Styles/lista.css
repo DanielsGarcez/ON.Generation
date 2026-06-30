@@ -30,7 +30,9 @@ main.container h1 {
   width: 100%;
 }
 
-/* ESTILO DO CARD (Totalmente azul, sem espaço de imagem) */
+/* =========================================
+   ESTILO DO CARD DA ONG (PADRONIZADO)
+========================================= */
 .card-ong {
   background-color: var(--corAzul);
   color: #fff;
@@ -38,13 +40,15 @@ main.container h1 {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   padding: 24px 16px;
   width: 250px;
-  min-height: 280px; /* Garante uma altura mínima para ficarem iguais */
+  
+  /* NOVIDADE: Altura fixa para todos os cards ficarem idênticos */
+  height: 380px; 
   
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: space-between; /* Mantém o título no topo e o botão no fundo */
+  justify-content: space-between;
   transition: transform 0.2s ease;
 }
 
@@ -52,9 +56,11 @@ main.container h1 {
   transform: translateY(-5px);
 }
 
-/* TEXTOS DENTRO DO CARD */
+/* =========================================
+   TEXTOS DENTRO DO CARD DA ONG
+========================================= */
 .card-ong h2 {
-  color: #fff;
+  color: #fff; 
   font-size: 1.2rem;
   margin-bottom: 10px;
   padding: 0;
@@ -64,9 +70,17 @@ main.container h1 {
   color: #fff;
   font-size: 0.9rem;
   line-height: 1.4;
-  margin-bottom: 20px;
+  margin-bottom: auto; /* Mantém o espaçamento flexível antes do botão */
   padding: 0;
+
+  /* TRUQUE MÁGICO: Limita o texto para não estourar o card */
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* Mostra no máximo 6 linhas. Pode alterar se quiser! */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adiciona o "..." no final do texto cortado */
 }
+
 
 /* BOTÃO INVERTIDO (Fundo branco, texto azul) */
 .botao {
