@@ -64,7 +64,7 @@ main{
 .card-content {
   background: var(--corAzul);
   color: #fff;
-  padding: 16px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;

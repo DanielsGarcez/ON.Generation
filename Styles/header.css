@@ -17,9 +17,9 @@
 }
 
 .logo {
-  padding-top: 10px;
-  width: 60px;
-  height: 60px;
+  padding-top: 5px;
+  width: 4rem;
+  height: 4rem;
 }
 
 .navbar {
@@ -43,6 +43,20 @@
 
 /* ---  MODO DESKTOP  --- */
 @media (min-width: 851px) {
+
+  .header-PC{
+    padding: 1rem 2rem;
+  }
+
+  /* Logo Texto */
+  .header-left h1{
+    font-size: 1.5rem;
+  }
+
+  .logo{
+    width: 1rem;
+    height: 1rem;
+  }
 
   /* Topbar normal */
   .topbar {
@@ -101,9 +115,8 @@
   }
 
 }
-
+  
 .profile{
-  margin-left: 250px;
   border: 3px solid var(--corAzul);
   border-radius: 100%;
 }
