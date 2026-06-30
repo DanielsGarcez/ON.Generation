@@ -43,6 +43,7 @@
 
 /* ---  MODO DESKTOP  --- */
 @media (min-width: 851px) {
+  
   /* Topbar normal */
   .topbar {
     padding: 5px 100px;
