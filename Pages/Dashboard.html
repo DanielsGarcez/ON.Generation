@@ -7,6 +7,7 @@
 
     <!-- Link Estilos -->
     <link rel="icon" type="image/png" href="../img/Logo-Default.png">
+    <link rel="stylesheet" href="../Styles/style.css">
     <link rel="stylesheet" href="../Styles/header.css">
     <link rel="stylesheet" href="../Styles/footer.css">
     <link rel="stylesheet" href="../Styles/dashboard.css">
@@ -19,6 +20,14 @@
 </head>
 <body>
   <main>
+
+    <article class="teste">
+      <h1>Bem-vindo!</h1>
+      <p>Usuário logado: <span id="userEmail"></span></p>
+      
+      <button onclick="logout()">Sair</button>
+    </article>
+
     <article class="perfil">
 
       <h2>Seu Perfil</h2>
@@ -50,6 +59,7 @@
               <label>Data de Nascimento:</label>
               <input id="data-nasc" type="date">
             </section>
+
             <section class="grupo-input">
               <label>Estado Civil:</label>
               <input type="civil">
@@ -69,7 +79,9 @@
               <label>Endereço:</label>
               <input id="endereco" type="text">
             </section>
-            
+          </aside>
+
+          <aside>
             <section class="grupo-input">
               <label>N°:</label>
               <input id="enderecoNum" type="number">
@@ -92,17 +104,9 @@
               <input id="telefone" type="text">
             </section>
           </aside>
+
         </section>
       </form>
-    </article>
-
-
-
-    <article class="teste">
-      <h1>Bem-vindo!</h1>
-      <p>Usuário logado: <span id="userEmail"></span></p>
-      
-      <button onclick="logout()">Sair</button>
     </article>
 
   </main>
