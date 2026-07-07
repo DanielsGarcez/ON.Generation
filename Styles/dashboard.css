@@ -4,6 +4,10 @@ h1{
     color: green;
 }
 
+#main-dashboard{
+    display: block;
+}
+
 .perfil{ 
     margin-top: 40px;
     max-width: 70%;
@@ -15,7 +19,7 @@ h1{
 
 .dados-perfil{
     display: grid;
-    
+
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5rem;
     
