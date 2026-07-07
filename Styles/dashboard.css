@@ -15,12 +15,20 @@ h1{
 
 .dados-perfil{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 500px;
+    
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    
+    padding: 2.5rem;
+    padding-top: 2rem;
 }
 
 .teste{
     margin: auto;
+    margin-top: 2rem;
     text-align: center;
-    
+}
+
+.teste button{
+    margin-top: 1rem;
 }

@@ -43,7 +43,12 @@
 
 /* ---  MODO DESKTOP  --- */
 @media (min-width: 851px) {
-  
+
+  /* Hamburguer aparece */
+  .hamburger {
+    display: none;
+  }
+
   /* Topbar normal */
   .topbar {
     padding: 5px 100px;
