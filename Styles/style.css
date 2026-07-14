@@ -203,7 +203,17 @@ main {
 
 #btn-vermais {
   padding: 10px 60px;
+  margin-top: 2rem;
   font-size: 1em;
+}
+
+#btn-instagram{
+    background: linear-gradient(45deg, #FEDA74, #F77E1E, #D62976, #962FBF, #4F5BD5);
+}
+
+#btn-instagram:hover{
+    background-color: #000000;
+    border-color: linear-gradient(45deg, #FEDA74, #F77E1E, #D62976, #962FBF, #4F5BD5);
 }
 
 .blue-section .btn,
