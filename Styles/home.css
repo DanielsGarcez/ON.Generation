@@ -1,3 +1,7 @@
 .topbar {
-display: none;
+    display: none;
+}
+
+#instagram-section{
+    background: linear-gradient(45deg, #FEDA74, #F77E1E, #D62976, #962FBF, #4F5BD5);
 }
