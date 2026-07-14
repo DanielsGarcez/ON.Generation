@@ -25,8 +25,6 @@ async function carregarONGs() {
 
   document.title = categoriaFormatada;
 
-  
-
   // vai buscar no banco de dados ongs que batem com a categoria da URL
   try {
     const ongRef = collection(db, "ongs");
@@ -42,22 +40,21 @@ async function carregarONGs() {
       return;
     }
 
-    // troca o texto do html
+    // troca o texto do html aplicando a nova estrutura de classes
     snapshot.forEach((doc) => {
       const ong = doc.data();
       
       container.innerHTML += `
         <article class="card-ong">
-          <section class="container">
-            <section class="ong">
-              <h2>${ong.nome}</h2>
-              <p>${ong.descricao}</p>
-            </section>
-            <button class="botao" onclick="window.open('${ong.site}','_blanck')">
+          <div class="img-placeholder">
+            </div>
+          <div class="card-content">
+            <h2>${ong.nome}</h2>
+            <p>${ong.descricao}</p>
+            <button class="botao" onclick="window.open('${ong.site}','_blank')">
               Acessar o site
             </button>
-          </section>
-          <hr>
+          </div>
         </article>
       `;
     });
