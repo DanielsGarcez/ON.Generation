@@ -3,5 +3,15 @@
 }
 
 #instagram-section{
-    background-color: #000000;
+    background-color: var(--corInstagram);
+}
+
+#instagram-section > .container-img{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    line-height: 0;
+    flex: 1;
+    max-height: 500px;
+    overflow: hidden;
 }

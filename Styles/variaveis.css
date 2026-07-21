@@ -9,6 +9,8 @@
     --corCinzaEscuro: #616161;
     --corPreto: #000;
 
+    --corInstagram: linear-gradient(45deg, #FEDA74, #F77E1E, #D62976, #962FBF, #4F5BD5);
+
     /* Tipografia */
     --fonteInter: 'Inter', sans-serif;
 }
