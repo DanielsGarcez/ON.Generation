@@ -212,17 +212,15 @@ main {
 #btn-instagram{
   margin-top: 2rem;
 
-  transition: .5s;
-
   border: 2px solid var(--corBranco);
-  background: linear-gradient(45deg, #FEDA74, #F77E1E, #D62976, #962FBF, #4F5BD5);
+  background: var(--corInstagram);
   color: var(--corBranco);
 }
 
 #btn-instagram:hover{
-  border: 2px solid linear-gradient(45deg, #FEDA74, #F77E1E, #D62976, #962FBF, #4F5BD5);
+  border: 2px solid var(--corInstagram);
   background: var(--corBranco);
-  color: linear-gradient(45deg, #FEDA74, #F77E1E, #D62976, #962FBF, #4F5BD5);;
+  color: var(--corInstagram);
 }
 
 .blue-section .btn,

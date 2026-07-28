@@ -22,4 +22,7 @@
 
     /* Fonte */
     font-family: var(--fonteInter);
+
+    /* Transições Suaves */
+    transition: .5s ease;
 }
