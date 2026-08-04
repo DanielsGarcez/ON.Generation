@@ -51,6 +51,9 @@ async function getDadosDoUsuarioLogado() {
         const dados = snap.data();
         console.log("Dados:", dados);
 
+        document.getElementById("nome-usuario").value - dados.nome || "";
+        document.getElementById("email-usuario").value - dados.email || "";
+
         document.getElementById("nome").value = dados.nome || "";
         document.getElementById("email").value = dados.email || "";
         document.getElementById("cpf").value = dados.cpf || "";
@@ -58,9 +61,11 @@ async function getDadosDoUsuarioLogado() {
         document.getElementById("civil").value = dados.estadoCivil || "";
         document.getElementById("renda").value = dados.renda || "";
         document.getElementById("familia").value = dados.familia || "";
+
         document.getElementById("endereco").value = dados.endereco || "";
-        document.getElementById("enderecoNum").value = dados.enderecoNum || "";
+        document.getElementById("enderecoNum").value = dados.numeroEndereco || "";
         document.getElementById("cep").value = dados.cep || "";
+
         document.getElementById("cidade").value = dados.cidade || "";
         document.getElementById("estado").value = dados.estado || "";
         document.getElementById("telefone").value = dados.telefone || "";
