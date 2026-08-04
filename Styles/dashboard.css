@@ -25,13 +25,13 @@ h1{
     border-radius: 50%;
     border: 3px solid var(--corAzul);
 
-    width: 5rem;
-
+    width: 3rem;
     margin: 1rem;
 }
 
 #nome-usuario{
-    margin-left: 2rem;
+    display: block;
+    align-content: center;
 }
 
 .dados-perfil{
