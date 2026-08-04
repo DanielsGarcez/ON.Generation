@@ -8,6 +8,10 @@ h1{
     display: block;
 }
 
+.foto-nome{
+    display: flex;
+}
+
 .perfil{ 
     margin-top: 40px;
     max-width: 70%;
@@ -18,7 +22,12 @@ h1{
 }
 
 #imagem-usuario{
-    
+    border-radius: 50%;
+    border: 3px solid var(--corAzul);
+
+    width: 5rem;
+
+    margin: 1rem;
 }
 
 #nome-usuario{

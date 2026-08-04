@@ -59,7 +59,7 @@ async function getDadosDoUsuarioLogado() {
         document.getElementById("renda").value = dados.renda || "";
         document.getElementById("familia").value = dados.familia || "";
         document.getElementById("endereco").value = dados.endereco || "";
-        document.getElementById("enderecoNum").value = dados.parseInt(enderecoNum) || "";
+        document.getElementById("enderecoNum").value = dados.Number(enderecoNum) || "";
         document.getElementById("cep").value = dados.cep || "";
         document.getElementById("cidade").value = dados.cidade || "";
         document.getElementById("estado").value = dados.estado || "";
