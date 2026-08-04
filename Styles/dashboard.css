@@ -12,6 +12,10 @@ h1{
     display: flex;
 }
 
+.nome-email{
+    display: flex;
+}
+
 .perfil{ 
     margin-top: 40px;
     max-width: 70%;
