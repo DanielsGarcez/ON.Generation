@@ -166,7 +166,7 @@ li.banner-item::scroll-marker{
     height: 1rem;
 
     background-color: transparent;
-    border: 2px solid var(--corCinzaEscuroTransparente);
+    border: 2px solid var(--corCinzaClaro);
     border-radius: 50%;
     
     overflow: hidden;
@@ -178,13 +178,13 @@ li.banner-item::scroll-marker:hover{
 }
 
 li.banner-item::scroll-marker:target-current{
-    background-color: var(--corCinzaEscuroTransparente);
+    background-color: var(--corCinzaClaro);
 }
 
 
 /* ANTIGO */
 
-.banner img {
+/* .banner img {
   padding-top: 5%;
   width: 100%;
 
@@ -193,7 +193,7 @@ li.banner-item::scroll-marker:target-current{
 
 .container-img {
   width: 50%;
-  background-color: transparent; /* ou remova totalmente */
+  background-color: transparent;
 
   line-height: 0;
 }
@@ -202,7 +202,7 @@ li.banner-item::scroll-marker:target-current{
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 /* --------------------- SECTIONS --------------------- */
 .section {
