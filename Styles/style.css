@@ -106,13 +106,18 @@ main {
 
 /* --------------------- BANNER-HOME --------------------- */
 .banner-home {
-  height: 300px;
-
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 3em; 
+  margin-bottom: 5em; 
+}
+
+.banner-home > img{
+  width: 100%;
+  height: auto;
+
+  box-shadow: 1px 1px 1px var(--corCinzaClaro);
 }
 
 ul.banner-carrossel{
