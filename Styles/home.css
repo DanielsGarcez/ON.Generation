@@ -2,8 +2,22 @@
     display: none;
 }
 
-#instagram-section{
+/* #instagram-section{
     background: var(--corInstagram);
+} 
+
+#btn-instagram{
+  margin-top: 2rem;
+
+  border: 2px solid var(--corBranco);
+  background: var(--corInstagram);
+  color: var(--corBranco);
+}
+
+#btn-instagram:hover{
+  border: 2px solid var(--corInstagram);
+  background: var(--corBranco);
+  color: var(--corInstagram);
 }
 
 #instagram-container-img{
@@ -14,4 +28,8 @@
     flex: 1;
     max-height: 500px;
     overflow: hidden;
+}*/
+
+.container-img{
+    width: 50%;
 }

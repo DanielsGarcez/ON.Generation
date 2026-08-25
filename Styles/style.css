@@ -109,8 +109,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin-bottom: 5em; 
 }
 
 .banner-item > img{
@@ -286,19 +284,6 @@ li.banner-item::scroll-marker:target-current{
   font-size: 1em;
 }
 
-#btn-instagram{
-  margin-top: 2rem;
-
-  border: 2px solid var(--corBranco);
-  background: var(--corInstagram);
-  color: var(--corBranco);
-}
-
-#btn-instagram:hover{
-  border: 2px solid var(--corInstagram);
-  background: var(--corBranco);
-  color: var(--corInstagram);
-}
 
 .blue-section .btn,
 .alt-section .btn {
