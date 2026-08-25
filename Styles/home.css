@@ -20,6 +20,10 @@
   color: var(--corInstagram);
 }*/
 
+#btn-instagram{
+    margin-top: 5rem;
+}
+
 #instagram-container-img{
     width: 50%;
     height: 100%;
