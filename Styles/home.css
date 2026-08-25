@@ -18,7 +18,7 @@
   border: 2px solid var(--corInstagram);
   background: var(--corBranco);
   color: var(--corInstagram);
-}
+}*/
 
 #instagram-container-img{
     width: 50%;
@@ -28,7 +28,7 @@
     flex: 1;
     max-height: 500px;
     overflow: hidden;
-}*/
+}
 
 .container-img{
     width: 50%;
