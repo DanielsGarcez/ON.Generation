@@ -291,6 +291,8 @@ li.banner-item::scroll-marker:target-current{
   font-size: 1.5em;
   padding: 2% 10%;
   transition: .5s;
+  
+  margin-bottom: 20%;
 }
 
 .blue-section .btn:hover {
