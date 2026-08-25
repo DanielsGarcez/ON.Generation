@@ -8,17 +8,25 @@ h1{
     display: block;
 }
 
+.container-perfil{
+    display: flex;
+    flex-direction: row;
+}
+
 .foto-nome{
     display: flex;
 }
 
 .nome-email{
     display: flex;
+    flex-direction: column;
+
+    margin-left: 3rem;
 }
 
 .perfil{ 
-    margin-top: 40px;
-    max-width: 70%;
+    margin-top: 3rem;
+    max-width: 50%;
     min-width: 720px;
     
     border: 1px solid black;
