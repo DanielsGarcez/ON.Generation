@@ -11,6 +11,10 @@ h1{
 .container-perfil{
     display: flex;
     flex-direction: row;
+
+    margin-left: 2rem;
+    margin-top: 2rem;
+    
 }
 
 .foto-nome{
@@ -20,8 +24,7 @@ h1{
 .nome-email{
     display: flex;
     flex-direction: column;
-
-    margin-left: 3rem;
+    justify-content: center;
 }
 
 .perfil{ 
