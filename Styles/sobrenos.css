@@ -16,7 +16,7 @@ main{
 }
 
 /* SECTION BASE */
-.section {
+.section-sobre-nos {
   display: flex;
   justify-content: space-between;
   padding: 1% 7%;
@@ -24,7 +24,7 @@ main{
   align-items: stretch;
 }
 
-.section:nth-child(even) {
+.section-sobre-nos:nth-child(even) {
   background: white;
 }  
 .sub-titulo {
