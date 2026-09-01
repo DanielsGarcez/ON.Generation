@@ -292,7 +292,7 @@ li.banner-item::scroll-marker:target-current{
   padding: 2% 10%;
   transition: .5s;
   
-  margin-bottom: 20%;
+  margin-bottom: 5rem;
 }
 
 .blue-section .btn:hover {
