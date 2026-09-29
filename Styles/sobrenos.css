@@ -37,15 +37,19 @@ main{
 
 .pilares{
   display: flex;
+  flex-direction: column;
+  gap: 3%;
   
   margin-top: 10%;
   margin-bottom: 10%;
 
-  gap: 3%;
+  padding: 1% 7%;
+  padding-bottom: 5rem;
 }
 
 .item{
-  width: 33%;
+  display: flex;
+  flex-direction: row;
 }
 
 .item h2{
