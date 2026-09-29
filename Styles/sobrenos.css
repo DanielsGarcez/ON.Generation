@@ -77,8 +77,12 @@ p{
   text-align: justify;
 }
 
-img{
-
+.img-nos{
+  display: flex;
+  padding: 1% 7%;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 2rem 0rem;
 }
 
 /* RESPONSIVO */
