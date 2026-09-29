@@ -58,6 +58,7 @@ main{
 
 hr{
   border-top: 1px solid var(--corCinzaEscuro);
+  margin: 2rem 0rem;
 }
 
 h2{
@@ -65,6 +66,8 @@ h2{
   color: var(--corAzul);
   text-align: center;
   justify-content: center;
+
+  margin-bottom: 1rem;
 }
 
 p{
