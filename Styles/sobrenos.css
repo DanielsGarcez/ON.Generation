@@ -50,6 +50,7 @@ main{
 .item{
   display: flex;
   flex-direction: row;
+  gap: 2rem;
 }
 
 .item h2{
@@ -74,6 +75,10 @@ p{
   font-size: 1.3em;
   color: var(--corPreto);
   text-align: justify;
+}
+
+img{
+
 }
 
 /* RESPONSIVO */
