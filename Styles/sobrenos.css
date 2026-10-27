@@ -86,7 +86,10 @@ p{
 
 .icons-3{
   width: 50%;
-  height: auto;
+  height: 50%;
+
+  max-height: 7rem;
+  max-width: 7rem;
 
   align-self: center;
 }
